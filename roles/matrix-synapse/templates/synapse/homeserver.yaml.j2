@@ -1216,9 +1216,9 @@ allow_guest_access: {{ matrix_synapse_allow_guest_access|to_json }}
 #
 # If a delegate is specified, the config option public_baseurl must also be filled out.
 #
-account_threepid_delegates:
-    email: {{ matrix_synapse_account_threepid_delegates_email|to_json }}
-    msisdn: {{ matrix_synapse_account_threepid_delegates_msisdn|to_json }}
+#account_threepid_delegates:
+#    email: {{ matrix_synapse_account_threepid_delegates_email|to_json }}
+#    msisdn: {{ matrix_synapse_account_threepid_delegates_msisdn|to_json }}
 
 # Whether users are allowed to change their displayname after it has
 # been initially set. Useful when provisioning users based on the
