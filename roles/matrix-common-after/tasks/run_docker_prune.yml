@@ -2,3 +2,6 @@
 
 - name: Run Docker System Prune
   command: "{{ matrix_host_command_docker }} system prune -a -f"
+  when:
+    - matrix_docker_prune is defined
+    - matrix_docker_prune == True
